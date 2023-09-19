@@ -1,9 +1,34 @@
+:root {
+  --sec-1-image-size: 300px;
+  --shadowval: 1px 2px 10px -2px black;
+}
 
-.App {
+
+
+.maintanance-screen {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  text-align: center;
+  background-image: url("https://images.pexels.com/photos/3780104/pexels-photo-3780104.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+}
+
+
+.text {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+section {
+  margin: 0px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  padding: 20px;
 }
 
 .maintanance-title {
@@ -11,14 +36,8 @@
   text-align: center;
 }
 
-.App-header {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
 
-
-.maintanance-description, a {
+.maintanance-description, .dev-contact {
   text-align: center;
   color: white;
 }
@@ -36,4 +55,239 @@
 .fesports-credits {
   width: 9rem;
   align-self: center;
+}
+
+
+/* Main starts here */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(8, 0, 37);
+  padding: 0;
+  align-items: center;
+  padding: 20px 20px 20px 50px;
+  list-style: none;
+  max-height: 10vh;
+  margin: 0;
+}
+
+
+.nav-ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-ul li a{
+  color: white;
+  text-decoration: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.nav-logo {
+  width: 4rem;
+  transform: scale(2);
+}
+
+.sec-1 {
+  display: flex;
+  background-color: #200048;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.sec-1-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.sec-1 h1 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.sec-1-content p {
+  margin: 30px 2px;
+}
+
+.sec-1-content a {
+  text-align: center;
+  font-size: 20px;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: var(--shadowval);
+  width: 7rem;
+}
+
+.games-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img-cod {
+  width: var(--sec-1-image-size);
+  border-radius: 100px 0px 0px 0px;
+}
+
+.img-bgmi {
+  height: 100%;
+  width: var(--sec-1-image-size);
+  border-radius: 0px 100px 0px 0px;
+}
+
+.img-efootball {
+  width: var(--sec-1-image-size);
+  border-radius: 0px 0px 100px 0px;
+}
+
+.img-ff {
+  width: var(--sec-1-image-size);
+  border-radius: 0px 0px 0px 100px;
+}
+
+
+.icon-holder-circle {
+  background-color: #040428;
+  border-radius: 50%;
+  max-width: 40px;
+  min-height: 40px;
+  padding: 20px;
+  position: relative;
+  left: 85%;
+  bottom: 260%;
+  display: flex;
+  box-shadow: var(--shadowval);
+}
+
+.icon-holder-circle img {
+  width: 100%;
+  transform: scale(1.4);
+  
+}
+
+/* Section 2 */
+
+.sec-2 {
+  background-color: #1A003C;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.prev-event-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  font-size: .9rem;
+  z-index: 2;
+  text-align: center;
+}
+
+.prev-event-img-holder {
+  width: 100%;
+  
+}
+
+.prev-event-img-holder img {
+  width: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.prev-event-left, .prev-event-right{
+  min-width: 25%;
+  background-color: #120029;
+  height: 20vw;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: 1;
+}
+
+.prev-event-left {
+  margin-right: -30vw;
+}
+
+.prev-event-right {
+  margin-left: -30vw;
+}
+
+.sec-3 {
+  background-color: #120029;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.top-player h3 {
+  margin: 0;
+}
+
+.top-player {
+  padding: 10px;
+  background-color: #2A0559;
+  border-radius: 20px;
+  margin: 8px;
+}
+
+.top-player p {
+  float: left;
+  color: white;
+  margin: 0;
+  padding: 0px 5px;
+  font-family: 'Courier New', Courier, monospace;
+  border-right: 1px solid white;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 910px){
+  .games-img img {
+    max-width: 150px;
+  }
+
+  .icon-holder-circle {
+    bottom: 130px;
+    left: 77%;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .sec-1 {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sec-1-content {
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: -50px;
+  }
+
+  .sec-1-content h1 {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .games-img {
+    margin: auto;
+    margin-top: 10px;
+    transform: scale(1.1);
+    justify-content: left;
+  }
 }
